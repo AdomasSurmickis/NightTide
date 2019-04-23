@@ -1,10 +1,7 @@
 var   express         = require('express'),
       app             = express(),
       bodyParser      = require("body-parser"); 
-const http = require('http');
 
-// const hostname = '127.0.0.1';
-// const port = 3000;
 
 // const server = http.createServer((req, res) => {
 //   res.statusCode = 200;
@@ -41,11 +38,15 @@ app.get('/products', function (req, res) {
     res.render('products.ejs');
  })
 
+ app.get('/products/pearls', function (req, res) {
+   res.render('single.ejs');
+})
+
  app.get('/checkout', function (req, res) {
     res.render('checkout.ejs');
  })
 
-var server = app.listen(3000, function () {
+var server = app.listen(1000, function () {
    var host = server.address().address
    var port = server.address().port
    

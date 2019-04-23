@@ -6,25 +6,40 @@ nav {
     nav ul li {
       display: inline-block; }
 
-.fas {
-  color: white; }
-
-.logo {
-  height: 50px;
-  width: 205px; }
-
-.jumbotron-fluid {
-  height: 100px;
-  padding-top: 10px; }
-
-/*footer*/
-div .carousel-item img {
-  width: 700px;
-  height: 500px;
-  border-radius: 30px; }
-
-.mano {
-  text-align: center; }
+.asd {
+  text-align: center;
+  font-stretch: extra-expanded; }
+  .asd .logos {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 2px;
+    text-decoration: none; }
+  .asd div.letterE {
+    position: relative;
+    height: 32px;
+    width: 19px;
+    margin-top: 10px;
+    background: white;
+    display: inline-block; }
+    .asd div.letterE::before, .asd div.letterE::after {
+      display: inline-block;
+      background: #232323;
+      height: calc( 32px / 5);
+      width: 20px;
+      position: absolute;
+      content: '';
+      left: 0; }
+    .asd div.letterE::before {
+      top: calc( 32px / 5); }
+    .asd div.letterE::after {
+      bottom: calc( 32px / 5); }
+    .asd div.letterE a {
+      display: block;
+      padding: 0;
+      margin: 0;
+      color: red;
+      text-decoration: none; }
 
 .clearfix:after {
   display: table;
@@ -83,6 +98,15 @@ footer {
   footer * {
     color: white; }
 
+div .carousel-item img {
+  width: 700px;
+  height: 500px;
+  border-radius: 30px; }
+
+.jumbotron-fluid {
+  height: 100px;
+  padding-top: 10px; }
+
 .card a img {
   width: 100%;
   height: 100%; }
@@ -90,3 +114,43 @@ footer {
 .card i {
   color: black;
   font-size: 30px; }
+
+.card h3 {
+  font-family: sans-serif;
+  text-transform: uppercase; }
+
+.hov :hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+
+.containeris {
+  max-width: 1300px;
+  margin: 0 15px; }
+
+.featured-section {
+  background: #232323;
+  padding: 0;
+  margin-bottom: 50px; }
+  .featured-section * {
+    color: white; }
+  .featured-section a {
+    display: inline-block;
+    font-weight: 900;
+    width: 100%; }
+  .featured-section .product {
+    margin-top: 25px;
+    margin-bottom: 20px; }
+    .featured-section .product img {
+      width: 100%; }
+
+.single-main {
+  position: absolute;
+  z-index: 2000;
+  top: 50%;
+  /* position the top  edge of the element at the middle of the parent */
+  left: 50%;
+  /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7); }
+
+.single {
+  color: white; }

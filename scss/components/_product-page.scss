@@ -1,4 +1,6 @@
 .card{
+   
+
     a{
         img{
             width: 100%;
@@ -10,7 +12,19 @@
         font-size: 30px;
     }
 
+    h3{
+        font-family: sans-serif;
+        text-transform: uppercase;
+    }
 }
 
+.hov{
+    :hover{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+     }
+}
 
-
+.containeris{
+    max-width: 1300px;
+    margin: 0 15px;
+}
