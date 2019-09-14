@@ -14,6 +14,7 @@ function watch(){
   browserSync.init({
     // server: './'
     proxy: "localhost:1000",
+    open: "external",
     ws: true
     // tunnel:true
   },
