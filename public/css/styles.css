@@ -3,7 +3,8 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100; }
+  z-index: 100;
+  transition: top 0.3s; }
   nav ul {
     float: left; }
     nav ul li {
@@ -184,6 +185,8 @@ div .carousel-item img {
   margin-bottom: 50px; }
   .featured-section * {
     color: white; }
+  .featured-section img {
+    height: 160px; }
   .featured-section a {
     display: inline-block;
     font-weight: 900;
