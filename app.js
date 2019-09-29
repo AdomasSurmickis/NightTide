@@ -38,7 +38,7 @@ app.get('/products', function (req, res) {
     res.render('products.ejs');
  })
 
- app.get('/products/pearls', function (req, res) {
+ app.get('/single', function (req, res) {
    res.render('single.ejs');
 })
 

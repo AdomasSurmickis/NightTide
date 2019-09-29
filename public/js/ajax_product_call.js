@@ -1,7 +1,7 @@
 // 1. create a new XMLHttpRequest object -- an object like any other!
 var myRequest = new XMLHttpRequest();
 // 2. open the request and pass the HTTP method name and the resource as parameters
-myRequest.open('GET', 'products/pearls');
+myRequest.open('GET', 'single');
 // 3. write a function that runs anytime the state of the AJAX request changes
 myRequest.onreadystatechange = function () { 
     // 4. check if the request has a readyState of 4, which indicates the server has responded (complete)
@@ -13,12 +13,29 @@ myRequest.onreadystatechange = function () {
 
 
 function sendTheAJAX() {
-    myRequest.send();
+    console.log($(".bt"));
+    if($(".bt").length >0){
+        document.getElementById('single-content').style.display='block';
+    }else{
+        myRequest.send();
+    }
+    
     // document.getElementById('reveal').style.display = 'none';
 }
+$(document).keydown(function(e) {
+    // ESCAPE key pressed
+    if (e.keyCode == 27) {
+       close();
+    }
+});
 
 function close(){
+    document.getElementById('single-content').style.display='none';
+    
 
     
-    document.getElementById('single-content').style.display='none';
 }
+
+$('body').on('click', '.bt', function (){
+    document.getElementById('single-content').style.display='none';
+}); 
