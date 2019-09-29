@@ -1,0 +1,90 @@
+<nav>
+        <!--<i class="fas fa-flag fa-1x pt-2" style="position:relative; color:white;"></i>-->
+        <div class='container'>
+            <div class='row'>
+                <div class='col-4 align-self-center p-0'>
+                    <ul class="navbar nav justify-content-md-start">
+                        <li class="nav-item"><a class="nav-link" href="/products">Earings</a></li>
+                        <li class="nav-item"><a class=" nav-link" href="/single">Necklaces</a></li>
+                        <li class="nav-item"><a class=" nav-link" href="/about">Bracelets</a></li>
+                        <li class="nav-item"><a class=" nav-link" href="/about">Rings</a></li>
+                        <li class="nav-item"><a class="Recommended dropdown-toggle nav-link"
+                                href="javascript:void(0)">Recommended</a></li>
+                    </ul>
+
+                </div>
+
+                <!-- LOGO PART -->
+                <div class="col-4 logo align-self-center p-0">
+                    <a class="logos d-inline-block  " href="/">NIGHTTID<div class="letterE"></div>
+                        <!-- <img  src="/img/nightLogo.jpg" class="logo"  alt=""> -->
+                    </a>
+                </div>
+
+                <!-- RIGHT PART -->
+
+
+                <div class='col-4 align-self-center right-part p-0'>
+                    <ul class="navbar nav justify-content-md-start">
+                        <li class="nav-item chart"><a class=" nav-link" quantity="3" href="/checkout"><i
+                                    class="fas fa-shopping-cart fa-2x"></i></a></li>
+                        <li class="nav-item"><a class=" nav-link" href="/products/pearls"><i
+                                    class="far fa-heart fa-2x"></i></a></li>
+                        <li class="nav-item">
+
+                            <form class="form-inline text-white" action="/action_page.php" method="get" id="nameform">
+
+                                <button class="nav-link" type="submit" form="nameform" value="Submit">
+                                    <i class="fas fa-search fa-2x"></i>
+                                </button>
+                                <input class="nav-link form-control" name="" autocomplete="on" autocorrect="off"
+                                    spellcheck="false" placeholder="Search for accesories!" type="text"
+                                    aria-label="Search">
+                            </form>
+
+
+
+                        </li>
+                        <li class="nav-item">
+                            <div class=" leave">
+                                <a class="nav-link language dropdown-toggle " href="/en"  link='EN'>
+                                    <i class="fas fa-flag fa-2x "></i>
+                                </a>
+
+                                <div class="selectLang relative ">
+                                    <a  href="#">DK</a>
+                                    <a  href="#">LT</a>
+                                    <a  href="#">RU</a>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!-- recomended skiltis -->
+        <div class="row hidint">
+            <div class="col">
+                <a><img src="/img/11.jpg" class="w-100"></a>
+            </div>
+            <div class="col">
+                <a> <img src="./img/44.jpg" class="w-100"></a>
+            </div>
+            <div class="col">
+                <a> <img src="./img/33.jpg" class="w-100"></a>
+            </div>
+            <div class="col">
+                <a> <img src="./img/55.jpg" class="w-100"></a>
+            </div>
+            <div class="col">
+                <a> <img src="./img/22.jpg" class="w-100"></a>
+            </div>
+        </div>
+
+    </nav>

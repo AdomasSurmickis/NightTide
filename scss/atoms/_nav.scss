@@ -3,15 +3,38 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
-  ul {
-    float: left;
-    li {
-      display: inline-block;
-      text-transform: uppercase;
-      font-weight: bold;
+  z-index: 1;
+
+  @media (min-width: 992px) {
+    .container {
+      max-width: 100%;
     }
   }
+
+  .nav-link {
+    color: white;
+    // font-weight: 500;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    i{
+      font-size: 35px;
+    }
+
+    &:hover {
+      color: #8f8072;
+      text-decoration: none;
+    }
+  }
+
+  .active {
+    background-color: white;
+    border-radius: 10px;
+    .nav-link {
+      color: black;
+    }
+  }
+
 
   .logo {
     text-align: center;
@@ -28,20 +51,16 @@ nav {
     }
 
     div.letterE {
-      // border-radius: 2px;
       position: relative;
       height: 32px; // pagal sita yra skaiciuojamas auksti before ir after
       width: 19px;
-      margin-top: 10px;
-
+      margin-top: 8px;
       background: white;
-
       display: inline-block;
 
       &::before,
       &::after {
         display: inline-block;
-        // background: red;
         background: $first-color;
         height: calc(32px / 5);
         width: 20px;
@@ -61,38 +80,33 @@ nav {
 
   .right-part {
     .chart {
-      &:first-child {
+      a {
         position: relative;
         &::after {
           position: absolute;
           content: attr(quantity);
-          top: 4px;
-          left: 17px;
-          color: $first-color;
+          position: absolute;
+          left: 47%;
+          font-size: 18px;
+          font-family: "Courier New", Courier, monospace;
           font-weight: bold;
+          top: 26%;
+          color: $first-color;
         }
       }
     }
-    .language {
-      position: relative;
-      color: $first-color;
-      margin-left: 5px;
-      &::after {
-        content: attr(link);
-        color: $first-color;
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-top: -10px;
-        margin-left: -10px;
-      }
 
-      i {
-        &:last-child {
+    .leave {
+      position: relative;
+      .language {
+        &::before {
+          content: attr(link);
+          color: $first-color;
+          display: block;
           position: absolute;
-          margin-top: 10px;
-          margin-left: 3px;
+          border: none;
+          top: 16px;
+          left: 28px;
         }
       }
     }
@@ -100,34 +114,30 @@ nav {
 
   form {
     input[type="text"] {
-      padding: 5px;
+      text-transform: none;
     }
     button {
       background: $first-color;
-      outline: none;
       border: none;
-      color: white;
     }
   }
 
 
-
-  .relative{
-    // background: red;
-    position: relative;
-  }
-
-  .selectLang{
-    // font-size: 15px;
-    // margin-bottom: 5px;
+  .selectLang {
+    a {
+      color: white;
+    }
+    display: none;
+    padding: 10px;
     position: absolute;
-    top: 0;
-    margin-top: -5px;
-    left: 50px;
-    // padding-left: 5px;
-    width: 30px;
+    background: $first-color;
+    top: 40px;
+    left: 16px;
+    width: 40px;
   }
 }
+
+// padirbeti
 
 @media (min-width: 768px) {
   .container {
@@ -141,8 +151,6 @@ nav {
   }
 }
 
-
-.hidint{
+.hidint {
   transition: cubic-bezier(0.19, 1, 0.22, 1);
 }
-
