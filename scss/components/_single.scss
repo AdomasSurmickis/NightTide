@@ -11,27 +11,32 @@
 .single {
   color: white;
 
-  hr{
-    background: #8f8072; 
+  hr {
+    background: #8f8072;
   }
 
-  .btn-outline-secondary{
-    border-color: #8f8072; 
+  .btn-outline-secondary {
+    border-color: #8f8072;
   }
 
- 
-  
-  i{
-    // color: black;
-    color:white;
-    font-size: 30px;
+  .mySlides {
+    img {
+      &:not(:first-child) {
+        display: none;
+      }
     }
-    
+  }
+
+  i {
+    // color: black;
+    color: white;
+    font-size: 30px;
+  }
+
   .side {
     img {
       height: 70px;
     }
-
   }
 
   h1 {
@@ -56,68 +61,63 @@
     margin-top: 40px;
     font-family: "Kalam", cursive;
     font-weight: 700;
-
   }
 
-  p{
-      font-family: Helvetica, Arial, sans-serif;
-      font-size: 13px;
+  p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
   }
 
   .btn-group {
     margin-top: 50px;
 
-    
-      svg{
-        fill:white;
-      }
-    
-    a{
-      color:white;
-    
+    svg {
+      fill: white;
     }
 
-  
-    button{
-        // color: black;
-        color: white;
-        font-size: 20px;
+    a {
+      color: white;
+    }
+
+    button {
+      // color: black;
+      color: white;
+      font-size: 20px;
     }
   }
 }
 
-
-.to-top{
-	color:black;
-	padding-top:1.8em;
-	display:inline-block;/* or block */
-  position:relative;
-  bottom:50px;
+.to-top {
+  color: black;
+  padding-top: 1.8em;
+  display: inline-block; /* or block */
+  position: relative;
+  bottom: 50px;
   right: 50px;
   position: fixed;
-	border-color:white;
-	text-decoration:none;
-	transition:all .3s ease-out;
+  border-color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
 }
-.to-top:before{
-	content:'▲';
-	font-size:0.9em;
-	position:absolute;
-	top:0;
-	left:50%;
-	margin-left:-.7em;
-	border:solid .13em white;
-	border-radius:10em;
-	width:1.4em;
-	height:1.4em;
-	line-height:1.3em;
-	border-color:inherit;
-	transition:transform .5s ease-in;
+.to-top:before {
+  content: "▲";
+  font-size: 0.9em;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -0.7em;
+  border: solid 0.13em white;
+  border-radius: 10em;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.3em;
+  border-color: inherit;
+  transition: transform 0.5s ease-in;
 }
-.to-top:hover{
-	color:pink;
-	border-color:pink;
+.to-top:hover {
+  color: pink;
+  border-color: pink;
 }
-.to-top:hover:before{
-	transform: rotate(360deg);
+.to-top:hover:before {
+  transform: rotate(360deg);
 }

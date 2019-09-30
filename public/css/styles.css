@@ -419,6 +419,8 @@ img.t9 {
     background: #8f8072; }
   .single .btn-outline-secondary {
     border-color: #8f8072; }
+  .single .mySlides img:not(:first-child) {
+    display: none; }
   .single i {
     color: white;
     font-size: 30px; }
@@ -466,22 +468,22 @@ img.t9 {
   position: fixed;
   border-color: white;
   text-decoration: none;
-  transition: all .3s ease-out; }
+  transition: all 0.3s ease-out; }
 
 .to-top:before {
-  content: '▲';
+  content: "▲";
   font-size: 0.9em;
   position: absolute;
   top: 0;
   left: 50%;
-  margin-left: -.7em;
-  border: solid .13em white;
+  margin-left: -0.7em;
+  border: solid 0.13em white;
   border-radius: 10em;
   width: 1.4em;
   height: 1.4em;
   line-height: 1.3em;
   border-color: inherit;
-  transition: transform .5s ease-in; }
+  transition: transform 0.5s ease-in; }
 
 .to-top:hover {
   color: pink;
