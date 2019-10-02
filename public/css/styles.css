@@ -4,7 +4,9 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1; }
+  z-index: 1000; }
+  nav + div {
+    margin-top: 65px; }
   @media (min-width: 992px) {
     nav .container {
       max-width: 100%; } }
@@ -201,10 +203,8 @@ div .carousel-item img {
   height: 100px;
   padding-top: 10px; }
 
-.album {
-  margin-top: 50px; }
-  .album h1 {
-    padding: 30px; }
+.album h1 {
+  padding: 30px; }
 
 .card a {
   overflow: hidden; }
@@ -456,6 +456,10 @@ img.t9 {
     .single .btn-group button {
       color: white;
       font-size: 20px; }
+  .single .productPhoto:not(:first-child) {
+    display: none; }
+  .single .cursor {
+    opacity: 0.6; }
 
 .to-top {
   color: black;
@@ -494,8 +498,7 @@ img.t9 {
 
 .jumbotron {
   text-align: center;
-  font-family: cursive;
-  margin-top: 65px; }
+  font-family: cursive; }
 
 /* Add a pointer   when hovering over the thumbnail images */
 .cursor {

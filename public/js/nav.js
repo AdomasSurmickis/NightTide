@@ -80,3 +80,38 @@ $(document).ready(function() {
          }
         });
        });
+
+
+       // on hover 
+$(document).ready(function () {
+        $(".hidint").hide();
+        $(".Recommended").mouseover(function () {
+                //     if($(this).hasClass("3")) {
+                $(".hidint").show();
+
+                // $(".jumbotron").css("margin-top", "220px");
+
+
+
+                //     $(".jumbotron").css({
+                //         'margin-top' : "220px",
+                //         transition : 'opacity 1s ease-in-out'
+                //     });
+
+                //     } else if($(this).hasClass("4")) {
+                //         $("#side h2.2").show();
+                //     } 
+        });
+
+        $(".hidint")
+                .mouseleave(function () {
+                        //     if($(this).hasClass("3")) {
+                        $(".hidint").hide();
+                        // $(".jumbotron").css("margin-top", "90px");
+                        //     } else if($(this).hasClass("4")) {
+                        //         $("#side h2.2").hide();
+                        //     }
+                });
+
+
+})

@@ -1,9 +1,14 @@
 nav {
+
+  &+div{
+    margin-top:65px;
+  }
+
   background-color: $first-color;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 1000;
 
   @media (min-width: 992px) {
     .container {
@@ -154,3 +159,5 @@ nav {
 .hidint {
   transition: cubic-bezier(0.19, 1, 0.22, 1);
 }
+
+
