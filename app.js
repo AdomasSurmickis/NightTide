@@ -46,6 +46,9 @@ app.get('/products', function (req, res) {
     res.render('checkout.ejs');
  })
 
+ app.get('/favourites', function (req, res) {
+   res.render('favourites.ejs');
+})
 var server = app.listen(1000, function () {
    var host = server.address().address
    var port = server.address().port

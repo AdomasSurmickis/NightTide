@@ -1,25 +1,25 @@
+var single_previ = 0;
+var opened = false;
 // carousel in single product section
-
-var slideIndex = 0;
-var prevIndex = 0;
-changeSlide(slideIndex);
-
-// Thumbnail image controls
-function changeSlide(n) {
-  slide(slideIndex = n);
-  prevIndex = n;
+if (opened == true) {
+  changeSlide(slideIndex);
 }
 
 function slide(n) {
   var slides = $(".productPhoto");
   var cursor = $(".cursor");
-  cursor[prevIndex].style.opacity = '0.6';
+  cursor[single_previ].style.opacity = '0.6';
   cursor[slideIndex].style.opacity = '1';
-  slides[prevIndex].style.display = "none";
+  slides[single_previ].style.display = "none";
   slides[slideIndex].style.display = "block";
 
 }
 
-$( "html" ).mouseup(function() {
-  alert( "Handler for .mouseup() called." );
-});
+function changeSlide(n) {
+  slide(slideIndex = n);
+  single_previ = n;
+}
+
+// $( "html" ).mouseup(function() {
+//   alert( "Handler for .mouseup() called." );
+// });

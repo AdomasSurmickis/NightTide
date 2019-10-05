@@ -13,7 +13,8 @@ myRequest.onreadystatechange = function () {
 
 
 function sendTheAJAX() {
-    console.log($(".bt"));
+    opened=true;
+  
     if($(".bt").length >0){
         document.getElementById('single-content').style.display='block';
     }else{
@@ -27,15 +28,15 @@ $(document).keydown(function(e) {
     if (e.keyCode == 27) {
        close();
     }
+    
 });
 
 function close(){
     document.getElementById('single-content').style.display='none';
     
-
-    
 }
 
 $('body').on('click', '.bt', function (){
     document.getElementById('single-content').style.display='none';
+    opened=false;
 }); 

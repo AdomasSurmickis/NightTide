@@ -7,9 +7,6 @@ nav {
   z-index: 1000; }
   nav + div {
     margin-top: 65px; }
-  @media (min-width: 992px) {
-    nav .container {
-      max-width: 100%; } }
   nav .nav-link {
     color: white;
     font-family: "Oswald", sans-serif;
@@ -87,11 +84,76 @@ nav {
     padding: 10px;
     position: absolute;
     background: #232323;
-    top: 40px;
+    top: 45px;
     left: 16px;
-    width: 40px; }
+    width: 50px; }
     nav .selectLang a {
       color: white; }
+  nav .checkout {
+    display: none;
+    width: 280px;
+    min-height: 150px;
+    background-color: #232323;
+    position: absolute;
+    top: 66px;
+    right: 300px;
+    color: white;
+    padding: 10px; }
+    nav .checkout .checkout-items {
+      max-height: 270px;
+      overflow: scroll; }
+    nav .checkout h1 {
+      font-family: sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      padding-top: 10px; }
+    nav .checkout hr {
+      background-color: white;
+      border: 1px solid white; }
+    nav .checkout img {
+      max-width: 76px;
+      max-height: 84px;
+      margin-right: 5px; }
+    nav .checkout .checkout-top a {
+      float: left; }
+    nav .checkout .checkout-top span {
+      padding: 2px;
+      float: right; }
+    nav .checkout .checkout-bottom {
+      display: inline;
+      margin-right: 10px; }
+      nav .checkout .checkout-bottom span {
+        display: block;
+        overflow: hidden;
+        padding: 2px; }
+      nav .checkout .checkout-bottom .l {
+        margin-left: 45px;
+        display: inline-block; }
+      nav .checkout .checkout-bottom .qty {
+        display: inline-block; }
+      nav .checkout .checkout-bottom .qty-wrapper {
+        padding: 5px 0;
+        overflow: hidden;
+        float: left; }
+      nav .checkout .checkout-bottom .checkout-quantity {
+        display: inline-block;
+        overflow: hidden; }
+        nav .checkout .checkout-bottom .checkout-quantity button {
+          border-radius: 100%;
+          border: none;
+          font-family: "Chango", cursive;
+          outline: none; }
+    nav .checkout .checkout-total {
+      padding-bottom: 10px; }
+      nav .checkout .checkout-total span {
+        float: right; }
+      nav .checkout .checkout-total :first-child {
+        float: left; }
+    nav .checkout .checkout-buttons {
+      text-align: center; }
+      nav .checkout .checkout-buttons .btn {
+        font-family: 'Syncopate', sans-serif;
+        margin: 5px; }
 
 @media (min-width: 768px) {
   .container {
@@ -100,6 +162,10 @@ nav {
 @media (min-width: 992px) {
   .container {
     max-width: 1300px; } }
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 100%; } }
 
 .hidint {
   transition: cubic-bezier(0.19, 1, 0.22, 1); }
@@ -424,8 +490,12 @@ img.t9 {
   .single i {
     color: white;
     font-size: 30px; }
-  .single .side img {
-    height: 70px; }
+  .single .side {
+    height: 310px;
+    overflow: scroll;
+    position: relative; }
+    .single .side img {
+      height: 70px; }
   .single h1 {
     font-family: "Indie Flower", cursive;
     position: relative;
@@ -458,7 +528,7 @@ img.t9 {
       font-size: 20px; }
   .single .productPhoto:not(:first-child) {
     display: none; }
-  .single .cursor {
+  .single .cursor:not(:first-child) {
     opacity: 0.6; }
 
 .to-top {
@@ -495,6 +565,30 @@ img.t9 {
 
 .to-top:hover:before {
   transform: rotate(360deg); }
+
+.arrow {
+  background-color: white;
+  border: solid black;
+  border-width: 0 8px 8px 0;
+  display: inline-block;
+  padding: 8px;
+  left: 50%; }
+
+.down {
+  margin-left: -12px;
+  position: absolute;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg); }
+
+.up {
+  margin-left: -12px;
+  margin-top: -10px;
+  position: absolute;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg); }
+
+::-webkit-scrollbar {
+  display: none; }
 
 .jumbotron {
   text-align: center;
@@ -606,3 +700,15 @@ img.t9 {
   .mainGallery #wrapper:hover #timer,
   .mainGallery #wrapper:hover #play {
     opacity: 0.7; }
+
+.container2 {
+  max-width: 1000px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+h1 {
+  text-transform: uppercase; }
+  h1 span {
+    text-transform: none; }
