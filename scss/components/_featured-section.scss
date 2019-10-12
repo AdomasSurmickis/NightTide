@@ -2,36 +2,82 @@
   * {
     color: white;
   }
-
   background: $first-color;
   padding: 0;
-  // margin-bottom: 50px;
+
+.carousel-inner{
+  height: 600px;
+}
+  .carousel-indicators {
+    padding-top: 20px;
+    justify-content: center;
+    list-style: none;
+}
 
   .carousel-item {
     img {
       height: 160px;
       width: 160px;
     }
-  }
 
-  a {
-    display: inline-block;
-    font-weight: 900;
-    width: 100%;
-    // padding: 20px;
-  }
+    
 
-  .product {
+
+  .single_featured{
+    text-align: center; 
     margin-top: 25px;
     margin-bottom: 20px;
+
+    .wrap1{
+      height: 160px;
+      // width: 100%;
+      // float: right;
+      justify-content: center;
+
+      display: flex;
+    }
+    .wr{
+      // display: flex;
+      align-self: center;
+      span{
+        display:block;
+        align-items: center;
+
+      }
+    }
+
+
+    .center {
+      height: 200px;
+      position: relative;
+      border: 3px solid green;
+    }
+    
+    .center p {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    a{
+      float: left;
+      font-weight: 900;
+
+    }
   }
+
+
 }
+
+
+// end of carousel
 
 .offers{
   padding: 50px;
   display: inline-block;
   i{
-    // margin-right: 300px;
     &:last-child{
       margin-right:0;
     }
@@ -194,3 +240,4 @@ img.t9 {
   left: 50%;
 }
 
+}
