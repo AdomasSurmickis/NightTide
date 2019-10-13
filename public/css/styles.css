@@ -303,14 +303,14 @@ div .carousel-item img {
 
 .featured-section {
   background: #232323;
-  padding: 0; }
+  padding: 0;
+  padding-bottom: 30px; }
   .featured-section * {
     color: white; }
   .featured-section .carousel-inner {
-    height: 600px; }
+    height: 580px; }
   .featured-section .carousel-indicators {
-    padding-top: 20px;
-    justify-content: center;
+    position: static;
     list-style: none; }
   .featured-section .carousel-item img {
     height: 160px;
@@ -348,125 +348,6 @@ div .carousel-item img {
       margin-right: 0; }
     .featured-section .offers div {
       display: inline-block; }
-  .featured-section #wrapper {
-    width: 100%;
-    height: 100%;
-    min-width: 500px;
-    min-height: 500px;
-    overflow: hidden;
-    position: relative; }
-  .featured-section #inner {
-    position: absolute;
-    display: none; }
-  .featured-section #inner.horizontal {
-    width: 100%;
-    height: 420px;
-    margin: -210px 0 0 0;
-    top: 50%;
-    left: 0; }
-  .featured-section #inner.vertical {
-    width: 420px;
-    height: 100%;
-    margin: 0 0 0 -210px;
-    top: 0;
-    left: 50%; }
-  .featured-section #carousel > div {
-    width: 420px;
-    height: 420px;
-    float: left;
-    position: relative; }
-  .featured-section #carousel img {
-    border-radius: 100px;
-    display: block;
-    width: 120px;
-    height: 120px;
-    position: absolute; }
-  .featured-section img.t1 {
-    left: 10px;
-    top: 10px; }
-  .featured-section img.t2 {
-    left: 150px;
-    top: 10px; }
-  .featured-section img.t3 {
-    left: 290px;
-    top: 10px; }
-  .featured-section img.t4 {
-    left: 10px;
-    top: 150px; }
-  .featured-section img.t5 {
-    left: 150px;
-    top: 150px; }
-  .featured-section img.t6 {
-    left: 290px;
-    top: 150px; }
-  .featured-section img.t7 {
-    left: 10px;
-    top: 290px; }
-  .featured-section img.t8 {
-    left: 150px;
-    top: 290px; }
-  .featured-section img.t9 {
-    left: 290px;
-    top: 290px; }
-  .featured-section #left,
-  .featured-section #right,
-  .featured-section #up,
-  .featured-section #down {
-    border-radius: 50px;
-    border: 5px solid #ccc;
-    background: #fff;
-    display: block;
-    width: 60px;
-    height: 60px;
-    margin: -35px;
-    position: absolute; }
-  .featured-section #left {
-    top: 50%;
-    left: 0; }
-  .featured-section #right {
-    top: 50%;
-    right: 0; }
-  .featured-section #up {
-    top: 0;
-    left: 50%; }
-  .featured-section #down {
-    bottom: 0;
-    left: 50%; }
-  .featured-section #left:after,
-  .featured-section #right:after,
-  .featured-section #up:after,
-  .featured-section #down:after {
-    content: "";
-    border: 5px solid transparent;
-    display: block;
-    width: 0;
-    height: 0;
-    margin: -5px;
-    position: absolute; }
-  .featured-section #left:after {
-    border-right-color: #ccc;
-    border-right-width: 10px;
-    margin-left: 0;
-    left: 50%;
-    top: 50%; }
-  .featured-section #right:after {
-    border-left-color: #ccc;
-    border-left-width: 10px;
-    margin-right: 0;
-    right: 50%;
-    top: 50%; }
-  .featured-section #up:after {
-    border-bottom-color: #ccc;
-    border-bottom-width: 10px;
-    margin-top: 0;
-    top: 50%;
-    left: 50%; }
-  .featured-section #down:after {
-    border-top-color: #ccc;
-    border-top-width: 10px;
-    margin-bottom: 0;
-    bottom: 50%;
-    left: 50%; }
 
 .single-main {
   position: absolute;
@@ -713,7 +594,7 @@ div .carousel-item img {
   max-width: 1200px; }
 
 .container4 {
-  max-width: 1300px; }
+  max-width: 1100px; }
 
 h1 {
   text-transform: uppercase; }
