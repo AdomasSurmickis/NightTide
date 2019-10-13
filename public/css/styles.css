@@ -307,11 +307,24 @@ div .carousel-item img {
   padding-bottom: 30px; }
   .featured-section * {
     color: white; }
+  .featured-section .cont {
+    text-align: center;
+    border-right: 2px solid grey; }
+    .featured-section .cont:last-child {
+      border-right: none; }
+    .featured-section .cont a {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      text-decoration: none; }
+      .featured-section .cont a:hover {
+        color: #8f8072; }
   .featured-section .carousel-inner {
     height: 580px; }
   .featured-section .carousel-indicators {
     position: static;
     list-style: none; }
+    .featured-section .carousel-indicators li {
+      height: 5px;
+      width: 30%; }
   .featured-section .carousel-item img {
     height: 160px;
     width: 160px; }
@@ -328,19 +341,8 @@ div .carousel-item img {
       .featured-section .carousel-item .single_featured .wr span {
         display: block;
         align-items: center; }
-    .featured-section .carousel-item .single_featured .center {
-      height: 200px;
-      position: relative;
-      border: 3px solid green; }
-    .featured-section .carousel-item .single_featured .center p {
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
     .featured-section .carousel-item .single_featured a {
-      float: left;
-      font-weight: 900; }
+      float: left; }
   .featured-section .offers {
     padding: 50px;
     display: inline-block; }
@@ -530,7 +532,7 @@ div .carousel-item img {
   .mainGallery .mySlides {
     display: none; }
     .mainGallery .mySlides img {
-      height: 500px; }
+      height: 450px; }
   .mainGallery .demo {
     opacity: 0.6;
     width: 100%;

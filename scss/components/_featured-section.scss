@@ -6,16 +6,34 @@
   padding: 0;
   padding-bottom: 30px;
 
+  .cont {
+    text-align: center;
+    border-right: 2px solid grey;
+    &:last-child {
+      border-right: none;
+    }
 
+    a {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      text-decoration: none;
+      &:hover {
+        color: $golden-color;
+      }
+    }
+  }
 
-.carousel-inner{
-  height: 580px;
-}
+  .carousel-inner {
+    height: 580px;
+  }
+
   .carousel-indicators {
     position: static;
- 
     list-style: none;
-}
+    li {
+      height: 5px;
+      width: 30%;
+    }
+  }
 
   .carousel-item {
     img {
@@ -23,77 +41,48 @@
       width: 160px;
     }
 
-   
+    .single_featured {
+      text-align: center;
+      margin-top: 25px;
+      margin-bottom: 20px;
 
+      .wrap1 {
+        height: 160px;
+        justify-content: center;
+        display: flex;
+      }
+      .wr {
+        align-self: center;
+        span {
+          display: block;
+          align-items: center;
+        }
+      }
 
-  .single_featured{
-    text-align: center; 
-    margin-top: 25px;
-    margin-bottom: 20px;
-
-    .wrap1{
-      height: 160px;
-      // width: 100%;
-      // float: right;
-      justify-content: center;
-
-      display: flex;
-    }
-    .wr{
-      // display: flex;
-      align-self: center;
-      span{
-        display:block;
-        align-items: center;
-
+      a {
+        float: left;
       }
     }
+  }
 
+  // end of carousel
 
-    .center {
-      height: 200px;
-      position: relative;
-      border: 3px solid green;
+  .offers {
+    padding: 50px;
+    display: inline-block;
+    i {
+      &:last-child {
+        margin-right: 0;
+      }
     }
-    
-    .center p {
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  
-    a{
-      float: left;
-      font-weight: 900;
-
+    div {
+      display: inline-block;
     }
   }
 
+  // ::-webkit-scrollbar {
+  //     display: none;
+  // }
 
-}
-
-
-// end of carousel
-
-.offers{
-  padding: 50px;
-  display: inline-block;
-  i{
-    &:last-child{
-      margin-right:0;
-    }
-  }
-  div{
-    display:inline-block;
-  }
-}
-
-
-// ::-webkit-scrollbar {
-//     display: none;
-// }
-
-// try
+  // try
 }
