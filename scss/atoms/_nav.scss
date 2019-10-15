@@ -1,7 +1,15 @@
+.row{
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
 nav {
   & + div {
     margin-top: 65px;
   }
+
 
   background-color: $first-color;
   position: fixed;

@@ -8,59 +8,13 @@
   cursor: pointer;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
 /* Six columns side by side */
 
 .mainGallery {
   /* Add a transparency effect for thumnbail images */
   height: $landingCarouselHeight;
   margin-bottom: 50px;
- 
+
   .row {
     height: $landingCarouselHeight;
   }
@@ -68,16 +22,24 @@
   /* Hide the images by default */
   .mySlides {
     display: none;
-    img{
-      height: $landingCarouselHeight*0.9;
-     
+    height: $landingCarouselHeight * 0.9;
+    img {
+      height: 100%;
     }
   }
 
+  .main_caorusel_caption {
+    height: $landingCarouselHeight * 0.1;
+    background: $first-color;
+    text-align: center;
+    padding:  (($landingCarouselHeight * 0.1)*0.2) 0;
+    color: white;
+  }
+
   .demo {
-    opacity: 0.6; 
+    opacity: 0.6;
     width: 100%;
-    height: 100px ;
+    height: 100px;
   }
 
   .active,
@@ -85,9 +47,7 @@
     opacity: 1;
   }
 
-
-
-  .carousel-caption{
+  .carousel-caption {
     color: rgb(0, 0, 0);
     font-size: 30px;
     z-index: 100;

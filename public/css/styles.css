@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.row {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0; }
+
 nav {
   background-color: #232323;
   position: fixed;
@@ -309,7 +315,7 @@ div .carousel-item img {
     color: white; }
   .featured-section .cont {
     text-align: center;
-    border-right: 2px solid grey; }
+    border-right: 1px solid grey; }
     .featured-section .cont:last-child {
       border-right: none; }
     .featured-section .cont a {
@@ -480,47 +486,6 @@ div .carousel-item img {
 .cursor {
   cursor: pointer; }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none; }
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px; }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8); }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0; }
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white; }
-
 /* Six columns side by side */
 .mainGallery {
   /* Add a transparency effect for thumnbail images */
@@ -530,9 +495,16 @@ div .carousel-item img {
   .mainGallery .row {
     height: 500px; }
   .mainGallery .mySlides {
-    display: none; }
+    display: none;
+    height: 450px; }
     .mainGallery .mySlides img {
-      height: 450px; }
+      height: 100%; }
+  .mainGallery .main_caorusel_caption {
+    height: 50px;
+    background: #232323;
+    text-align: center;
+    padding: 10px 0;
+    color: white; }
   .mainGallery .demo {
     opacity: 0.6;
     width: 100%;
@@ -583,7 +555,7 @@ div .carousel-item img {
   .mainGallery #wrapper:hover #play {
     opacity: 0.7; }
 
-.container2, .container3, .container4 {
+.container, .container2, .container3, .container4 {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;

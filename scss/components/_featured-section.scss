@@ -8,7 +8,8 @@
 
   .cont {
     text-align: center;
-    border-right: 2px solid grey;
+    border-right: 1px solid grey;
+    
     &:last-child {
       border-right: none;
     }
